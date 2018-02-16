@@ -10,9 +10,9 @@ func main() {
 
 // Client authentication with the openstack//
 opts := gophercloud.AuthOptions{
-IdentityEndpoint: "http://10.100.60.231:5000/v2.0",
-Username: "osmosis",
-Password: "osmosis",
+IdentityEndpoint: "http://openstack_url/v2.0",
+Username: "Admin",
+Password: "*******",
 TenantID: "b84bd7c16a6e47479b4aa99d81095b71",
 }
 provider, err := openstack.AuthenticatedClient(opts)
